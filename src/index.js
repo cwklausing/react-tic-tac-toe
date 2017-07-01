@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Board from './board';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class Game extends React.Component {
+	render() {
+		return <Board />;
+	}
+}
+
+ReactDOM.render(<Game />, document.getElementById('root'));
+
 registerServiceWorker();
