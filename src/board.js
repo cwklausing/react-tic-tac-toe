@@ -5,14 +5,18 @@ class Board extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			squares: Array(9).fill(null)
+			squares: Array(9).fill(null),
+			XisNext: true
 		};
 	}
 
 	handleClick(i) {
 		const squares = this.state.squares.slice();
-		squares[i] = 'X';
-		this.setState({ squares: squares });
+		squares[i] = this.state.XisNext ? 'X' : 'O';
+		this.setState({
+			squares: squares,
+			XisNext: !this.state.XisNext
+		});
 	}
 
 	renderSquare(i) {
