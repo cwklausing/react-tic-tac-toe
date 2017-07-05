@@ -28,13 +28,21 @@ body {
 	font-size: 32px;
 	width: 33%;
 	height: 100px;
+	transition:
+		background-color 500ms,
+		color 500ms;
 }
 
-.square:hover {
+.game-over .square {
+	background-color: #fcfcfc;
+	color: #797979;
+}
+
+.game-on .square:hover {
 	background-color: #fcfcfc;
 	cursor: pointer;
 }
 
-.square:active {
+.game-on .square:active {
 	background-color: #eeeeee;
 }
