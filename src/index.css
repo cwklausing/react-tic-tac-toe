@@ -5,6 +5,11 @@ body {
   	font-family: sans-serif;
 }
 
+.title,
+.status {
+	text-align: center;
+}
+
 #root {
 	margin-top: 200px;
 }

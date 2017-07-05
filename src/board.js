@@ -53,6 +53,7 @@ class Board extends React.Component {
 
 		return (
 			<div>
+				<h1 className="title">React-Tac-Toe</h1>
 				<p className="status">{status}</p>
 				<div className={bodyClass}>
 					<div className="board-row row-1">
